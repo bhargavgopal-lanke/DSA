@@ -32,9 +32,9 @@ const resNegative = negativeNUmbers(negativeArr);
 // console.log("resNegative", resNegative);
 
 // write a function that returns the largest number in an array
-const maxArr = [-9, -11, -3, 1, 0, 11];
+const maxArr = [-9, -11, -19, -3, 1, 0, 11];
 function findLargetNumber(arr) {
-  let num = maxArr[0];
+  let num = -Infinity; // arr[0] => both solutions work
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > num) {
       num = arr[i];
@@ -49,7 +49,7 @@ console.log("resLargest", resLargest);
 // find the minimum number from an array
 
 function findMinNumber(arr) {
-  let minNum = arr[0];
+  let minNum = Infinity; // arr[0] => both solutions work
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < minNum) {
       minNum = arr[i];
@@ -58,5 +58,5 @@ function findMinNumber(arr) {
   return minNum;
 }
 
-let resMin = findMinNumber(arr);
+let resMin = findMinNumber(maxArr);
 console.log("resMin", resMin);

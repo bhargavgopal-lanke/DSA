@@ -10,11 +10,12 @@ function checkPalindrome(n) {
     rev = rev * 10 + rem; // this line checks the number in reverse
     n = Math.floor(n / 10);
   }
-  if (rev == originalNumber) {
-    return true;
-  } else {
-    return false;
-  }
+  //   if (rev == originalNumber) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  return rev === originalNumber;
 }
 
 const result = checkPalindrome(-2551);

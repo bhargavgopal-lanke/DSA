@@ -13,3 +13,18 @@ function removeDuplicates(nums) {
 
 const res = removeDuplicates(arr);
 console.log("res", res);
+
+function removeElements(nums) {
+  let x = 0;
+  let val = 3;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] !== val) {
+      nums[x] = nums[i];
+      x = x + 1;
+    }
+  }
+  return x;
+}
+
+const res1 = removeElements(arr);
+console.log("res1", res1);

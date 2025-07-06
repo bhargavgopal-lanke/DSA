@@ -45,12 +45,8 @@ console.log("palindromeres", palindromeres);
 
 function palindromeMethods(n) {
   let reversed = n.toString().split("").reverse().join("");
-  if (reversed == n) {
-    return true;
-  } else {
-    return false;
-  }
+  return reversed === n;
 }
 
-let palindromeres2 = palindromeMethods(11211);
+let palindromeres2 = palindromeMethods("tst");
 console.log("palindromeres2", palindromeres2);

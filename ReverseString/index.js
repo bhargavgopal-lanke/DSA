@@ -75,3 +75,23 @@ function strToArr3(str) {
 
 let res6 = strToArr3("doingit");
 console.log("res6", res6);
+
+// given a string , return the character which is most used in the string
+
+function mostUsedChar(str) {
+  let repeat = {};
+  for (let i = 0; i < str.length; i++) {
+    if (repeat[str[i]]) {
+      repeat[str[i]] += 1;
+    } else {
+      repeat[str[i]] = 1;
+    }
+  }
+  return repeat;
+}
+
+let mostUsedCharRes = mostUsedChar("bhaaaaaaar");
+console.log("mostUsedCharRes", mostUsedCharRes);
+
+// given a string , return the character which is most used in the string
+

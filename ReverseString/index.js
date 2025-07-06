@@ -93,5 +93,29 @@ function mostUsedChar(str) {
 let mostUsedCharRes = mostUsedChar("bhaaaaaaar");
 console.log("mostUsedCharRes", mostUsedCharRes);
 
+function mostUsedChar2(str) {
+  let result = {};
+  let maxCount = 0;
+  let char = "";
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (result[char]) {
+      result[char] = result[char] + 1;
+    } else {
+      result[char] = 1;
+    }
+  }
+  const arr = Object.entries(result);
+  console.log("length", arr);
+  for (let i = 0; i < arr.length; i++) {
+    const [key, value] = arr[i];
+    if (value > maxCount) {
+      maxCount = value;
+      char = key;
+    }
+  }
+  return { key: maxCount, value: char };
+}
 
-
+const resChar = mostUsedChar2("tonnnnnnnnnnny");
+console.log("resChar", resChar);

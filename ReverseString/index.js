@@ -66,3 +66,12 @@ function strToArr2(str) {
 
 let res5 = strToArr2("lanke");
 console.log("res5", res5);
+
+// convert the string into an array and reverse the string inside array using js methods
+
+function strToArr3(str) {
+  return str.split("").reverse().join("");
+}
+
+let res6 = strToArr3("doingit");
+console.log("res6", res6);

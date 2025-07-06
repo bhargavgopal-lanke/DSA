@@ -49,3 +49,20 @@ function strToArr(str) {
 
 let res4 = strToArr("lanke");
 console.log("res4", res4);
+
+// convert the string into an array and reverse the string inside array
+
+function strToArr2(str) {
+  let strArr = [];
+  let reverse = "";
+  for (let char of str) {
+    reverse = char + reverse;
+  }
+  for (let reverseChar of reverse) {
+    strArr.push(reverseChar);
+  }
+  return strArr;
+}
+
+let res5 = strToArr2("lanke");
+console.log("res5", res5);

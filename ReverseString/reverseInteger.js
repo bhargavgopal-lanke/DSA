@@ -40,3 +40,17 @@ function palindrome(n) {
 
 let palindromeres = palindrome(121);
 console.log("palindromeres", palindromeres);
+
+// palindrome using js methods
+
+function palindromeMethods(n) {
+  let reversed = n.toString().split("").reverse().join("");
+  if (reversed == n) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let palindromeres2 = palindromeMethods(11211);
+console.log("palindromeres2", palindromeres2);

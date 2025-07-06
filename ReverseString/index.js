@@ -106,7 +106,6 @@ function mostUsedChar2(str) {
     }
   }
   const arr = Object.entries(result);
-  console.log("length", arr);
   for (let i = 0; i < arr.length; i++) {
     const [key, value] = arr[i];
     if (value > maxCount) {

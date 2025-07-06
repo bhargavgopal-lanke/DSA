@@ -36,3 +36,16 @@ function reverseString3(str) {
 
 let res3 = reverseString3("Gopal");
 console.log("res3", res3);
+
+// convert the string into an array
+
+function strToArr(str) {
+  let strArr = [];
+  for (let char of str) {
+    strArr.push(char);
+  }
+  return strArr;
+}
+
+let res4 = strToArr("lanke");
+console.log("res4", res4);

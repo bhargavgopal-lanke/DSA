@@ -93,5 +93,5 @@ function mostUsedChar(str) {
 let mostUsedCharRes = mostUsedChar("bhaaaaaaar");
 console.log("mostUsedCharRes", mostUsedCharRes);
 
-// given a string , return the character which is most used in the string
+
 

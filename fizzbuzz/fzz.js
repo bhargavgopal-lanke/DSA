@@ -25,9 +25,9 @@ console.log(fizzbuzz(50));
 // star pattern practice and interview quetion
 
 function hashPattern(n) {
-  for (let i = 0; i < n; i++) {
+  for (let row = 0; row < n; row++) {
     let rows = "";
-    for (let j = 0; j < i; j++) {
+    for (let column = 0; column < row; column++) {
       rows = rows + "#";
     }
     console.log(rows);
@@ -39,9 +39,9 @@ hashPattern(5)
 
 // inverted star pattern
 function hashPatternInverted(n) {
-  for (let i = n; i > 0; i--) {
+  for (let row = n; row > 0; row--) {
     let rows = "";
-    for (let j = 0; j < i; j++) {
+    for (let column = 0; column < row; column++) {
       rows = rows + "#";
     }
     console.log(rows);

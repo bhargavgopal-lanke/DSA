@@ -34,4 +34,18 @@ function hashPattern(n) {
   }
 }
 
-hashPattern(15)
+hashPattern(5)
+
+
+// inverted star pattern
+function hashPatternInverted(n) {
+  for (let i = n; i > 0; i--) {
+    let rows = "";
+    for (let j = 0; j < i; j++) {
+      rows = rows + "#";
+    }
+    console.log(rows);
+  }
+}
+
+hashPatternInverted(5)

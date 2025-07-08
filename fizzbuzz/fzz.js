@@ -21,3 +21,17 @@ function fizzbuzz(n) {
 }
 
 console.log(fizzbuzz(50));
+
+// star pattern practice and interview quetion
+
+function hashPattern(n) {
+  for (let i = 0; i < n; i++) {
+    let rows = "";
+    for (let j = 0; j < i; j++) {
+      rows = rows + "#";
+    }
+    console.log(rows);
+  }
+}
+
+hashPattern(15)

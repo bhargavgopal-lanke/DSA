@@ -34,8 +34,7 @@ function hashPattern(n) {
   }
 }
 
-hashPattern(5)
-
+hashPattern(5);
 
 // inverted star pattern
 function hashPatternInverted(n) {
@@ -48,4 +47,24 @@ function hashPatternInverted(n) {
   }
 }
 
-hashPatternInverted(5)
+hashPatternInverted(5);
+
+// construct a pyramid
+// its very simple;
+
+function pyramid(n) {
+  for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = 0; j < 2 * n - 1; j++) {
+      let mid = Math.floor(2 * n - 1 / 2);
+      if (j >= mid - i && j <= mid + i) {
+        row = row + "#";
+      } else {
+        row = row + " ";
+      }
+    }
+    console.log(row);
+  }
+}
+
+pyramid(5);

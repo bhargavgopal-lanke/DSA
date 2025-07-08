@@ -1,4 +1,4 @@
-const secArr = [14, 14, 12, 4, 9, 0, 2, 8, 7, 1];
+const secArr = [14, 14, 12, 4, 9, 0, 2, 8, 7, 1, 1];
 
 function findSecondLargestNumber(arr) {
   let firstLargest = -Infinity; // 14,
@@ -26,7 +26,7 @@ const secRes = findSecondLargestNumber(secArr);
 function removeDuplicates(arr) {
   let newArr = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== secArr[i]) {
+    if (!newArr.includes(arr[i])) {
       newArr.push(arr[i]);
     }
   }
@@ -34,7 +34,7 @@ function removeDuplicates(arr) {
 }
 
 const dupeRes = removeDuplicates(secArr);
-// console.log("dupeRes", dupeRes);
+console.log("dupeRes", dupeRes);
 
 // for (let i = 0; i < 3; i++) {
 //   for (let j = i; j >= 0; j--) {

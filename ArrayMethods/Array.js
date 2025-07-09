@@ -59,3 +59,45 @@ function missingArr(arr) {
 }
 
 console.log(missingArr(misArr));
+
+// pyramid practice
+
+function pyramid(n) {
+  for (let i = 0; i < n; i++) {
+    let rows = "";
+    for (let j = 0; j < 2 * (n - 1); j++) {
+      let mid = Math.floor((2 * (n - 1)) / 2);
+      if (j >= mid - i && j <= mid + i) {
+        rows = rows + "#";
+      } else {
+        rows += " ";
+      }
+    }
+    console.log(rows);
+  }
+}
+
+pyramid(5);
+
+// return a  single number
+
+let singleOne = [2, 2, 1];
+let singleTwo = [4, 1, 2, 2, 1, 5, 4, 6];
+function singleNumber(n) {
+  let hash = {};
+  let singleNum = 0;
+  for (let i = 0; i < n.length; i++) {
+    if (hash[n[i]]) {
+      hash[n[i]] = hash[n[i]] + 1;
+    } else {
+      hash[n[i]] = 1;
+    }
+  }
+  for (let i = 0; i < n.length; i++) {
+    if (hash[n[i]] == 1) {
+      return n[i];
+    }
+  }
+}
+
+console.log(singleNumber(singleTwo));
